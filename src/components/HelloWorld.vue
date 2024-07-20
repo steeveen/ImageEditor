@@ -31,12 +31,8 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
-    <div>
-      <img :src="require('@/assets/test.png')">
-    </div>
-    <div
-        class="parent-container">
-      <image-editor ref="imageEditor" :image-path="require('@/assets/test.png')"/>
+    <div class="parent-container">
+      <image-editor ref="imageEditor" :image-path="require('@/assets/human.png')"/>
       <!--      <image-editor ref="imageEditor2" :image-path="require('@/assets/human.png')"/>-->
       <!--      <image-editor ref="imageEditor"-->
       <!--                :image-path="'https://images.pexels.com/photos/26555594/pexels-photo-26555594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'">-->
@@ -88,10 +84,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .parent-container {
-  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* 可根据需要调整高度 */
 }
 h3 {
   margin: 40px 0 0;

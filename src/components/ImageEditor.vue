@@ -1,6 +1,6 @@
 <template>
   <div ref="container" class="canvas-image-container">
-    <canvas ref="backgroundCanvas"></canvas>
+    <canvas ref="backgroundCanvas" style="position: relative"></canvas>
     <canvas ref="overlayCanvas"
             @mousedown="handleMouseDown"
             @mousemove="handleMouseMove"
